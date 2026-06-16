@@ -1,42 +1,51 @@
 # Sofia's Tech.Care Healthcare Dashboard
 
-Responsive React single-page dashboard for the Coalition Technologies FED skills test. The app fetches live patient data, filters the detailed dashboard to Jessica Taylor, renders the diagnosis history, blood pressure chart, vitals, diagnostics, profile, and lab results, and includes local CRUD controls for diagnostic and lab records.
+Responsive React single-page dashboard developed for the Coalition Technologies Front-End Developer Skills Assessment.
 
-## Setup
+## Overview
+
+This application recreates a healthcare dashboard interface using React and Vite. The dashboard retrieves patient information from the Coalition Technologies Patient Data API and displays healthcare insights for Jessica Taylor, including diagnosis history, blood pressure trends, vital signs, diagnostic records, and laboratory results.
+
+## Features
+
+* Responsive single-page application
+* Patient profile dashboard
+* Blood pressure trend visualization using Chart.js
+* Diagnosis history section
+* Vital statistics cards
+* Diagnostic list management
+* Laboratory results section
+* Component-based React architecture
+* API-driven data rendering
+
+## Technology Stack
+
+* React.js
+* Vite
+* JavaScript (ES6+)
+* Axios
+* Chart.js
+* CSS3
+
+## API Integration
+
+The application uses the Coalition Technologies Patient Data API to retrieve patient information. The dashboard filters and displays data specifically for Jessica Taylor, including:
+
+* Profile information
+* Diagnosis history
+* Blood pressure readings
+* Vital signs
+* Diagnostic records
+* Laboratory results
+
+## Installation
 
 ```bash
 npm install
 npm run dev
 ```
 
-Open the local Vite URL shown in the terminal.
-
-Default local URL:
-
-```text
-http://localhost:5173/
-```
-
-## API
-
-The app uses the Coalition Technologies Patient Data API:
-
-- URL: `https://fedskillstest.coalitiontechnologies.workers.dev`
-- Authentication: Basic auth
-- Default username: `coalition`
-- Default password: `skills-test`
-
-Optional environment overrides:
-
-```bash
-VITE_PATIENT_API_URL=
-VITE_API_USERNAME=
-VITE_API_PASSWORD=
-```
-
-Jessica Taylor's profile, vitals, diagnosis history, diagnostic list, and lab results are loaded from this API. The blood pressure chart uses Jessica Taylor's API `diagnosis_history` values. CRUD edits are local browser state only because the provided API is read-only and does not include POST, PUT, PATCH, or DELETE endpoints.
-
-## Scripts
+## Available Scripts
 
 ```bash
 npm run dev
@@ -44,4 +53,33 @@ npm run build
 npm run preview
 ```
 
+## Project Structure
+
+```text
+src/
+├── components/
+│   ├── Sidebar.jsx
+│   ├── Header.jsx
+│   ├── PatientProfile.jsx
+│   ├── DiagnosisHistory.jsx
+│   ├── BloodPressureChart.jsx
+│   ├── DiagnosticList.jsx
+│   └── LabResults.jsx
+├── services/
+│   └── api.js
+├── styles/
+│   └── main.css
+├── App.jsx
+└── main.jsx
+```
+
+## Build
+
+```bash
+npm run build
+```
+
+## Public URL 
+
+**https://sofia-s-healthcare-dashboard.vercel.app/**
 
