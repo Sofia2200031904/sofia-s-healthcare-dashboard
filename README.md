@@ -1,4 +1,4 @@
-# Sofia's<img width="1536" height="1024" alt="Tech Care Healthcare Dashboard" 
+# Sofia's Tech.Care Healthcare Dashboard
 
 Responsive React single-page dashboard developed for the Coalition Technologies Front-End Developer Skills Assessment.
 
@@ -79,8 +79,10 @@ src/
 npm run build
 ```
 
-## Public URL 
+## Author
 
 **https://sofia-s-healthcare-dashboard.vercel.app/**
+
+<img width="1536" height="1024" alt="Tech Care Healthcare Dashboard" src="https://github.com/user-attachments/assets/4e40e3f2-9b16-4826-bbc3-44deb5316100" />
 
 
