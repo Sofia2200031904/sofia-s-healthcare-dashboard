@@ -79,7 +79,7 @@ src/
 npm run build
 ```
 
-## Author
+## Public Url
 
 **https://sofia-s-healthcare-dashboard.vercel.app/**
 
